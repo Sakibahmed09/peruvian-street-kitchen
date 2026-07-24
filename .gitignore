@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+
+# Nano Banana generation thumbnails (noise)
+assets-src/*_thumb.jpeg
+assets-src/*_thumb.jpg
+
+# Python
+__pycache__/
+*.pyc
+
+# Heavy 4K Nano Banana intermediates (regenerable; final webp live in site/assets/img)
+assets-src/gen-*.png
