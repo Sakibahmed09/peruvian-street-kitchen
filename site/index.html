@@ -20,8 +20,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chango&family=Caveat+Brush&family=Big+Shoulders+Display:wght@600;700;800;900&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/img/hero-wide.webp" imagesrcset="assets/img/hero-mobile.webp?v=2 768w, assets/img/hero-wide-sm.webp?v=2 1500w, assets/img/hero-wide.webp?v=2 2560w" imagesizes="100vw" fetchpriority="high">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="preload" as="image" href="assets/img/hero-wide.webp" imagesrcset="assets/img/hero-mobile.webp?v=3 768w, assets/img/hero-wide-sm.webp?v=3 1500w, assets/img/hero-wide.webp?v=3 2560w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/style.css?v=6">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -57,8 +57,9 @@
 <body>
 <a class="skip-link" href="#menu">Skip to menu</a>
 
+<div class="topbar">
 <div class="offer-bar" role="note">
-  <p><strong>COLLECT20</strong> gets you 20% off every click &amp; collect order. Yes, every one.</p>
+  <p><span class="offer-big">Save 20%</span> on every click &amp; collect order with code <strong>COLLECT20</strong></p>
 </div>
 
 <header class="site-header">
@@ -69,6 +70,7 @@
     <a href="#sauce">The Sauce</a>
     <a href="#menu">Menu</a>
     <a href="#story">Our Story</a>
+    <a href="#catering">Catering</a>
     <a href="#find-us">Find Us</a>
   </nav>
   <div class="header-actions">
@@ -78,6 +80,7 @@
     </button>
   </div>
 </header>
+</div>
 
 <div class="mobile-menu" id="mobile-menu" hidden>
   <nav aria-label="Mobile">
@@ -85,6 +88,7 @@
     <a href="#menu">Menu</a>
     <a href="#story">Our Story</a>
     <a href="#reviews">Reviews</a>
+    <a href="#catering">Catering</a>
     <a href="#find-us">Find Us</a>
   </nav>
   <div class="mobile-menu-cta">
@@ -99,18 +103,15 @@
   <!-- ============ HERO ============ -->
   <section class="hero" aria-labelledby="hero-title">
     <picture class="hero-bg">
-      <source media="(max-width: 700px)" srcset="assets/img/hero-mobile.webp?v=2">
-      <source media="(max-width: 1300px)" srcset="assets/img/hero-wide-sm.webp?v=2">
-      <img src="assets/img/hero-wide.webp?v=2" alt="Peruvian Street Kitchen spread: a rice box and loaded Cajun fries drenched in green aji verde sauce, with sauce pots, chillies and lime on dark slate" width="2560" height="1429" fetchpriority="high">
+      <source media="(max-width: 700px)" srcset="assets/img/hero-mobile.webp?v=3">
+      <source media="(max-width: 1300px)" srcset="assets/img/hero-wide-sm.webp?v=3">
+      <img src="assets/img/hero-wide.webp?v=3" alt="Peruvian Street Kitchen spread: a rice box and loaded Cajun fries drenched in green aji verde sauce, with sauce pots, chillies and lime on dark slate" width="2560" height="1429" fetchpriority="high">
     </picture>
     <div class="hero-smoke" aria-hidden="true"></div>
     <div class="hero-scrim" aria-hidden="true"></div>
 
     <div class="hero-inner">
       <div class="hero-copy">
-        <p class="hero-stamp-row">
-          <span class="stamp stamp-green">100% Halal · HMC</span>
-        </p>
         <h1 id="hero-title" class="hero-title">
           <span class="line line-1">Peru</span>
           <span class="line line-2">not</span>
@@ -118,7 +119,7 @@
         </h1>
         <p class="hero-sub">Flame-grilled chicken. Three Peruvian sauces. One famous green one.</p>
         <div class="hero-cta">
-          <a class="btn btn-flame btn-lg" href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Order now</a>
+          <a class="btn btn-flame btn-lg" href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Order now<span class="btn-note">20% off with COLLECT20</span></a>
           <a class="btn btn-ghost btn-lg" href="https://deliveroo.co.uk/menu/london/chadwell-heath/peruvian-street-kitchen-chadwell-heath" target="_blank" rel="noopener">Deliveroo</a>
         </div>
       </div>
@@ -130,7 +131,7 @@
   <!-- ============ MARQUEE ============ -->
   <div class="marquee marquee-flame" aria-hidden="true">
     <div class="marquee-track">
-      <span>Flame-grilled thigh ★ Famous green sauce ★ Cilantro-lime rice ★ Cajun chips ★ 100% HMC halal ★ Dagenham now open ★ Walthamstow coming soon ★ </span><span>Flame-grilled thigh ★ Famous green sauce ★ Cilantro-lime rice ★ Cajun chips ★ 100% HMC halal ★ Dagenham now open ★ Walthamstow coming soon ★ </span>
+      <span>Flame-grilled thigh ★ Famous green sauce ★ Cilantro-lime rice ★ Cajun chips ★ 100% halal ★ Dagenham now open ★ Walthamstow coming soon ★ </span><span>Flame-grilled thigh ★ Famous green sauce ★ Cilantro-lime rice ★ Cajun chips ★ 100% halal ★ Dagenham now open ★ Walthamstow coming soon ★ </span>
     </div>
   </div>
 
@@ -150,7 +151,7 @@
         <p class="playbill-cite reveal">Sami, five stars, no notes</p>
         <div class="sauce-body reveal">
           <p>Aji verde. Coriander, green chilli, and a few things we take to the grave. Blended fresh every morning and poured heavy over every box. It is the sauce that inspired the whole menu.</p>
-          <p>Two more live beside it. <strong>Aji blanco</strong>, our creamy cart sauce with NYC halal-cart roots. <strong>Aji rojo</strong>, red heat built on fresh Carolina peppers. All three homemade. All three &pound;1.99 to take home.</p>
+          <p>Two more live beside it. <strong>Aji blanco</strong>, our creamy cart sauce with NYC halal-cart roots. <strong>Aji rojo</strong>, red heat built on fresh Carolina peppers. All three homemade. All three available to take home by the pot.</p>
         </div>
         <figure class="sauce-trio reveal">
           <img src="assets/img/sauce-trio.webp" alt="Three sauce pots: green aji verde, creamy white aji blanco, red aji rojo" width="1200" height="670" loading="lazy">
@@ -171,14 +172,13 @@
       <div class="menu-head reveal">
         <p class="hand">Drenched, not drizzled</p>
         <h2 id="menu-title" class="display-xl">Street <span class="mark">boxes</span> &amp; the rest</h2>
-        <p class="menu-head-sub">Prices straight from the counter. Every box built to order.</p>
+        <p class="menu-head-sub">Every box built to order and drenched in all three sauces.</p>
       </div>
 
       <div class="menu-featured">
         <article class="dish dish-wide reveal">
           <figure><img src="assets/img/hero-box.webp" alt="Signature combo box" width="912" height="1170" loading="lazy"></figure>
           <div class="dish-info">
-            <span class="price-tag">&pound;11.99</span>
             <h3>Signature Combo Box</h3>
             <p>Grilled chicken thigh on up to two bases: peri chips, spicy rice, cilantro-lime rice or salad. Finished with our sauces and crispy onions.</p>
             <a class="dish-order" href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Order this box &rarr;</a>
@@ -187,7 +187,6 @@
         <article class="dish dish-wide reveal">
           <figure><img src="assets/img/rice-box.webp" alt="Rice box" width="820" height="1038" loading="lazy"></figure>
           <div class="dish-info">
-            <span class="price-tag">&pound;10.99</span>
             <h3>Rice Box</h3>
             <p>Juicy grilled thigh over spicy rice or cilantro-lime rice, drenched in green, white and spicy sauce, topped with crispy onions.</p>
             <a class="dish-order" href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Order this box &rarr;</a>
@@ -199,7 +198,6 @@
         <article class="dish reveal">
           <figure><img src="assets/img/chips-box.webp" alt="Chips box with cajun fries" width="900" height="672" loading="lazy"></figure>
           <div class="dish-info">
-            <span class="price-tag">&pound;10.99</span>
             <h3>Chips Box</h3>
             <p>Cajun-spiced fries under grilled thigh, drenched in all three sauces.</p>
           </div>
@@ -207,7 +205,6 @@
         <article class="dish reveal">
           <figure><img src="assets/img/bun.webp" alt="The Peruvian bun" width="820" height="820" loading="lazy"></figure>
           <div class="dish-info">
-            <span class="price-tag">&pound;9.99</span>
             <h3>The Peruvian Bun</h3>
             <p>Grilled thigh in a toasted potato bun with green sauce, lettuce and pickles.</p>
           </div>
@@ -215,7 +212,6 @@
         <article class="dish reveal">
           <figure><img src="assets/img/wings.webp" alt="Rojo crema glazed wings" width="820" height="820" loading="lazy"></figure>
           <div class="dish-info">
-            <span class="price-tag">&pound;5.99</span>
             <h3>Street Wings</h3>
             <p>Rojo crema, garlic parmesan, pineapple habanero or Andean BBQ.</p>
           </div>
@@ -223,7 +219,6 @@
         <article class="dish reveal">
           <figure><img src="assets/img/dessert.webp" alt="Dubai pistachio cheesecake pot" width="820" height="820" loading="lazy"></figure>
           <div class="dish-info">
-            <span class="price-tag">&pound;5.99</span>
             <h3>Dubai Pistachio Pot</h3>
             <p>Pistachio kunafa base, creamy cheesecake, chocolate sauce. By Alison's.</p>
           </div>
@@ -238,40 +233,40 @@
           <div class="board-group">
             <h4>Street Boxes</h4>
             <ul>
-              <li><span>Signature Combo Box</span><i></i><b>&pound;11.99</b></li>
-              <li><span>Rice Box</span><i></i><b>&pound;10.99</b></li>
-              <li><span>Chips Box</span><i></i><b>&pound;10.99</b></li>
-              <li><span>Salad Box <small>healthy-ish</small></span><i></i><b>&pound;10.99</b></li>
+              <li><span>Signature Combo Box</span></li>
+              <li><span>Rice Box</span></li>
+              <li><span>Chips Box</span></li>
+              <li><span>Salad Box <small>healthy-ish</small></span></li>
             </ul>
             <h4>Street Buns</h4>
             <ul>
-              <li><span>The Peruvian Bun</span><i></i><b>&pound;9.99</b></li>
+              <li><span>The Peruvian Bun</span></li>
             </ul>
             <h4>Street Sauces</h4>
             <ul>
-              <li><span>Famous Green Sauce</span><i></i><b>&pound;1.99</b></li>
-              <li><span>Creamy Cart Sauce</span><i></i><b>&pound;1.99</b></li>
-              <li><span>Red Heat Sauce</span><i></i><b>&pound;1.99</b></li>
+              <li><span>Famous Green Sauce</span></li>
+              <li><span>Creamy Cart Sauce</span></li>
+              <li><span>Red Heat Sauce</span></li>
             </ul>
           </div>
           <div class="board-group">
             <h4>Street Sides <small>4pc wings</small></h4>
             <ul>
-              <li><span>Rojo Crema Wings</span><i></i><b>&pound;5.99</b></li>
-              <li><span>Garlic Parmesan Wings</span><i></i><b>&pound;5.99</b></li>
-              <li><span>Pineapple Habanero Wings</span><i></i><b>&pound;5.99</b></li>
-              <li><span>Andean BBQ Wings</span><i></i><b>&pound;5.99</b></li>
+              <li><span>Rojo Crema Wings</span></li>
+              <li><span>Garlic Parmesan Wings</span></li>
+              <li><span>Pineapple Habanero Wings</span></li>
+              <li><span>Andean BBQ Wings</span></li>
             </ul>
             <h4>Street Treats</h4>
             <ul>
-              <li><span>Dubai Pistachio Cheesecake Pot</span><i></i><b>&pound;5.99</b></li>
-              <li><span>Sticky Toffee Pudding</span><i></i><b>&pound;5.99</b></li>
-              <li><span>Viral Matilda Cake</span><i></i><b>&pound;6.99</b></li>
-              <li><span>Milkcakes <small>Nutella / Kinder / Ferrero / Oreo</small></span><i></i><b>&pound;4.99</b></li>
+              <li><span>Dubai Pistachio Cheesecake Pot</span></li>
+              <li><span>Sticky Toffee Pudding</span></li>
+              <li><span>Viral Matilda Cake</span></li>
+              <li><span>Milkcakes <small>Nutella / Kinder / Ferrero / Oreo</small></span></li>
             </ul>
             <h4>Softs</h4>
             <ul>
-              <li><span>Ice range <small>8 flavours</small></span><i></i><b>&pound;2.50</b></li>
+              <li><span>Ice range <small>8 flavours</small></span></li>
             </ul>
           </div>
         </div>
@@ -434,7 +429,33 @@
         </article>
       </div>
 
-      <p class="find-catering reveal">Feeding a crowd? We cater. Call <a href="tel:+447438543703">07438 543703</a> and we will sort the trays. 100% halal, HMC-certified chicken, always.</p>
+    </div>
+  </section>
+
+  <!-- ============ CATERING ============ -->
+  <section class="catering" id="catering" aria-labelledby="catering-title">
+    <div class="section-inner catering-grid">
+      <div class="catering-copy">
+        <p class="hand reveal">Feeding a crowd?</p>
+        <h2 id="catering-title" class="display-xl reveal">We <span class="mark">cater</span></h2>
+        <p class="catering-lead reveal">Office lunches, birthdays, private events. The same boxes, the same three sauces, stacked up for a room full of people.</p>
+        <ul class="catering-facts reveal">
+          <li><strong>From 20 boxes.</strong> Enough for a proper room.</li>
+          <li><strong>Collection or delivery.</strong> Pick up from the kitchen, or we deliver across inner London.</li>
+          <li><strong>Tell us the date.</strong> Give us a ring and we will build the order around your headcount.</li>
+        </ul>
+        <div class="catering-cta reveal">
+          <a class="btn btn-flame btn-lg" href="tel:+447438543703">Call 07438 543703</a>
+          <a class="btn btn-ghost btn-lg" href="https://wa.me/447438543703?text=Hi%20PSK%2C%20I%27d%20like%20to%20enquire%20about%20catering" target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
+        <p class="catering-note reveal">100% halal, always.</p>
+      </div>
+      <ul class="catering-types reveal">
+        <li>Corporate lunch</li>
+        <li>Office party</li>
+        <li>Birthday</li>
+        <li>Private event</li>
+      </ul>
     </div>
   </section>
 
@@ -467,6 +488,7 @@
       <a href="#menu">Menu</a>
       <a href="#story">Our Story</a>
       <a href="#reviews">Reviews</a>
+      <a href="#catering">Catering</a>
       <a href="#find-us">Find Us</a>
       <a href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Order</a>
     </nav>
@@ -480,7 +502,7 @@
     </div>
   </div>
   <div class="footer-legal">
-    <p>&copy; 2026 Peruvian Street Kitchen. 100% halal, HMC-certified chicken.</p>
+    <p>&copy; 2026 Peruvian Street Kitchen. 100% halal.</p>
   </div>
 </footer>
 
@@ -489,6 +511,6 @@
   <a class="btn btn-ghost" href="https://deliveroo.co.uk/menu/london/chadwell-heath/peruvian-street-kitchen-chadwell-heath" target="_blank" rel="noopener">Deliveroo</a>
 </div>
 
-<script src="assets/js/main.js" defer></script>
+<script src="assets/js/main.js?v=4" defer></script>
 </body>
 </html>
