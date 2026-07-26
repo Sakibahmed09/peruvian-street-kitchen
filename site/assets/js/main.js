@@ -103,7 +103,7 @@
     var statusText;
 
     if (now.mins >= today[0] && now.mins < today[1]) {
-      statusText = "Open now until " + fmt(today[1]) + " · collection ready in about 15 minutes";
+      statusText = "Open now until " + fmt(today[1]) + " · order ahead for collection";
     } else if (now.mins < today[0]) {
       statusText = "Opens today at " + fmt(today[0]) + " · order ahead for collection";
     } else {
