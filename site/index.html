@@ -20,8 +20,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chango&family=Caveat+Brush&family=Big+Shoulders+Display:wght@600;700;800;900&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/img/hero-wide.webp" imagesrcset="assets/img/hero-mobile.webp?v=8 768w, assets/img/hero-wide-sm.webp?v=8 1500w, assets/img/hero-wide.webp?v=8 2560w" imagesizes="100vw" fetchpriority="high">
-<link rel="stylesheet" href="assets/css/style.css?v=8">
+<link rel="preload" as="image" href="assets/img/hero-wide.webp" imagesrcset="assets/img/hero-mobile.webp?v=10 768w, assets/img/hero-wide-sm.webp?v=10 1500w, assets/img/hero-wide.webp?v=10 2560w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/style.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -67,7 +67,7 @@
     <img src="assets/img/logo-mark-sm.png" alt="PSK" width="145" height="96">
   </a>
   <nav class="main-nav" aria-label="Main">
-    <a href="#sauce">The Sauce</a>
+    <a href="#order">Order</a>
     <a href="#menu">Menu</a>
     <a href="#story">Our Story</a>
     <a href="#catering">Catering</a>
@@ -84,7 +84,7 @@
 
 <div class="mobile-menu" id="mobile-menu" hidden>
   <nav aria-label="Mobile">
-    <a href="#sauce">The Sauce</a>
+    <a href="#order">Order</a>
     <a href="#menu">Menu</a>
     <a href="#story">Our Story</a>
     <a href="#reviews">Reviews</a>
@@ -94,6 +94,7 @@
   <div class="mobile-menu-cta">
     <a class="btn btn-flame" href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Click &amp; Collect, 20% off</a>
     <a class="btn btn-ghost" href="https://deliveroo.co.uk/menu/london/chadwell-heath/peruvian-street-kitchen-chadwell-heath" target="_blank" rel="noopener">Deliveroo</a>
+    <a class="btn btn-ghost" href="https://www.ubereats.com/gb/store/peruvian-street-kitchen-g12-chadwell-heath-industrial-park-kemp-road/pXbf_ZSdWNG_N_mCPJYeJg" target="_blank" rel="noopener">Uber Eats</a>
   </div>
   <p class="mobile-menu-foot">Unit G12, Kemp Rd, Dagenham RM8 1SL · <a href="tel:+447438543703">07438 543703</a></p>
 </div>
@@ -103,9 +104,9 @@
   <!-- ============ HERO ============ -->
   <section class="hero" aria-labelledby="hero-title">
     <picture class="hero-bg">
-      <source media="(max-width: 700px)" srcset="assets/img/hero-mobile.webp?v=8">
-      <source media="(max-width: 1300px)" srcset="assets/img/hero-wide-sm.webp?v=8">
-      <img src="assets/img/hero-wide.webp?v=8" alt="Peruvian Street Kitchen spread: a rice box and loaded Cajun fries drenched in green aji verde sauce, with sauce pots, chillies and lime on dark slate" width="2560" height="1429" fetchpriority="high">
+      <source media="(max-width: 700px)" srcset="assets/img/hero-mobile.webp?v=10">
+      <source media="(max-width: 1300px)" srcset="assets/img/hero-wide-sm.webp?v=10">
+      <img src="assets/img/hero-wide.webp?v=10" alt="Peruvian Street Kitchen spread: a rice box and loaded Cajun fries drenched in green aji verde sauce, with sauce pots, chillies and lime on dark slate" width="2560" height="1429" fetchpriority="high">
     </picture>
     <div class="hero-smoke" aria-hidden="true"></div>
     <div class="hero-scrim" aria-hidden="true"></div>
@@ -121,6 +122,7 @@
         <div class="hero-cta">
           <a class="btn btn-flame btn-lg" href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Order now<span class="btn-note">20% off with COLLECT20</span></a>
           <a class="btn btn-ghost btn-lg" href="https://deliveroo.co.uk/menu/london/chadwell-heath/peruvian-street-kitchen-chadwell-heath" target="_blank" rel="noopener">Deliveroo</a>
+          <a class="btn btn-ghost btn-lg" href="https://www.ubereats.com/gb/store/peruvian-street-kitchen-g12-chadwell-heath-industrial-park-kemp-road/pXbf_ZSdWNG_N_mCPJYeJg" target="_blank" rel="noopener">Uber Eats</a>
         </div>
       </div>
     </div>
@@ -134,6 +136,36 @@
       <span>Flame-grilled thigh ★ Famous green sauce ★ Cilantro-lime rice ★ Cajun chips ★ 100% halal ★ Dagenham now open ★ Walthamstow coming soon ★ </span><span>Flame-grilled thigh ★ Famous green sauce ★ Cilantro-lime rice ★ Cajun chips ★ 100% halal ★ Dagenham now open ★ Walthamstow coming soon ★ </span>
     </div>
   </div>
+
+  <!-- ============ WAYS TO ORDER ============ -->
+  <section class="ways" id="order" aria-labelledby="ways-title">
+    <div class="section-inner">
+      <div class="ways-head">
+        <p class="hand reveal">Three ways in</p>
+        <h2 id="ways-title" class="display-xl reveal">Order <span class="mark">now</span></h2>
+      </div>
+      <div class="ways-grid">
+        <a class="way way-best reveal" href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">
+          <span class="way-flag">Best value</span>
+          <strong class="way-name">Click &amp; Collect</strong>
+          <span class="way-save">Save 20% with COLLECT20</span>
+          <span class="way-note">Order ahead, pick it up from the kitchen. Usually ready in about 15 minutes.</span>
+          <span class="way-go">Order and save &rarr;</span>
+        </a>
+        <a class="way reveal" href="https://deliveroo.co.uk/menu/london/chadwell-heath/peruvian-street-kitchen-chadwell-heath" target="_blank" rel="noopener">
+          <strong class="way-name">Deliveroo</strong>
+          <span class="way-note">Delivered to your door across the local area.</span>
+          <span class="way-go">Order on Deliveroo &rarr;</span>
+        </a>
+        <a class="way reveal" href="https://www.ubereats.com/gb/store/peruvian-street-kitchen-g12-chadwell-heath-industrial-park-kemp-road/pXbf_ZSdWNG_N_mCPJYeJg" target="_blank" rel="noopener">
+          <strong class="way-name">Uber Eats</strong>
+          <span class="way-note">Delivered to your door across the local area.</span>
+          <span class="way-go">Order on Uber Eats &rarr;</span>
+        </a>
+      </div>
+      <p class="ways-foot reveal">Feeding a crowd instead? <a href="/catering/">Build a catering order</a>.</p>
+    </div>
+  </section>
 
   <!-- ============ GREEN SAUCE ============ -->
   <section class="sauce section-stone" id="sauce" aria-labelledby="sauce-title">
@@ -361,7 +393,7 @@
         <hr class="pb-rule">
         <blockquote class="pb-quote pb-ink">
           <p>&ldquo;Best rice box I&rsquo;ve had. My <span class="pb-big">in-laws</span> loved it too&rdquo;</p>
-          <cite>Ayesha</cite>
+          <cite>Family order</cite>
         </blockquote>
         <hr class="pb-rule">
         <blockquote class="pb-quote pb-crimson">
@@ -471,6 +503,7 @@
       <div class="closer-cta reveal">
         <a class="btn btn-ink btn-lg" href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Order click &amp; collect<span class="btn-note">20% off with COLLECT20</span></a>
         <a class="btn btn-ink-ghost btn-lg" href="https://deliveroo.co.uk/menu/london/chadwell-heath/peruvian-street-kitchen-chadwell-heath" target="_blank" rel="noopener">Deliveroo</a>
+        <a class="btn btn-ink-ghost btn-lg" href="https://www.ubereats.com/gb/store/peruvian-street-kitchen-g12-chadwell-heath-industrial-park-kemp-road/pXbf_ZSdWNG_N_mCPJYeJg" target="_blank" rel="noopener">Uber Eats</a>
       </div>
     </div>
   </section>
@@ -493,6 +526,7 @@
       <a href="/contact/">Contact</a>
       <a href="/donate/">Donate</a>
       <a href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Order</a>
+      <a href="https://www.ubereats.com/gb/store/peruvian-street-kitchen-g12-chadwell-heath-industrial-park-kemp-road/pXbf_ZSdWNG_N_mCPJYeJg" target="_blank" rel="noopener">Uber Eats</a>
     </nav>
     <div class="footer-info">
       <p>Unit G12, Kemp Road<br>Dagenham RM8 1SL</p>
@@ -512,8 +546,9 @@
 <div class="sticky-order" data-sticky hidden>
   <a class="btn btn-flame" href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Collect &middot; 20% off</a>
   <a class="btn btn-ghost" href="https://deliveroo.co.uk/menu/london/chadwell-heath/peruvian-street-kitchen-chadwell-heath" target="_blank" rel="noopener">Deliveroo</a>
+  <a class="btn btn-ghost" href="https://www.ubereats.com/gb/store/peruvian-street-kitchen-g12-chadwell-heath-industrial-park-kemp-road/pXbf_ZSdWNG_N_mCPJYeJg" target="_blank" rel="noopener">Uber Eats</a>
 </div>
 
-<script src="assets/js/main.js?v=8" defer></script>
+<script src="assets/js/main.js?v=10" defer></script>
 </body>
 </html>
