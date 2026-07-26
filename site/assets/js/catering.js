@@ -4,7 +4,7 @@
   "use strict";
 
   var WHATSAPP = "447438543703";
-  var EMAIL = "hello@peruvianstreetkitchen.com";
+  var EMAIL = "sifat@sadistribution.net";
 
   var form = document.getElementById("builder");
   if (!form) return;

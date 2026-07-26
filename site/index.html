@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Peruvian Street Kitchen | Peru not Peri | Halal Rice Boxes, Dagenham</title>
 <meta name="description" content="Flame-grilled halal chicken, cilantro-lime rice and the famous green sauce. Peruvian rice boxes, buns and wings in Dagenham, East London. Click &amp; collect 20% off with code COLLECT20.">
 <link rel="canonical" href="https://peruvianstreetkitchen.com/">
@@ -20,37 +20,125 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chango&family=Caveat+Brush&family=Big+Shoulders+Display:wght@600;700;800;900&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/img/hero-wide.webp" imagesrcset="assets/img/hero-mobile.webp?v=10 768w, assets/img/hero-wide-sm.webp?v=10 1500w, assets/img/hero-wide.webp?v=10 2560w" imagesizes="100vw" fetchpriority="high">
-<link rel="stylesheet" href="assets/css/style.css?v=10">
+<link rel="preload" as="image" href="assets/img/hero-wide.webp" imagesrcset="assets/img/hero-mobile.webp?v=21 768w, assets/img/hero-wide-sm.webp?v=21 1500w, assets/img/hero-wide.webp?v=21 2560w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/style.css?v=21">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "name": "Peruvian Street Kitchen",
-  "alternateName": "PSK",
-  "url": "https://peruvianstreetkitchen.com/",
-  "image": "https://peruvianstreetkitchen.com/assets/img/og.jpg",
-  "servesCuisine": ["Peruvian", "Halal"],
-  "priceRange": "££",
-  "telephone": "+447438543703",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Unit G12, Kemp Road",
-    "addressLocality": "Dagenham",
-    "addressRegion": "London",
-    "postalCode": "RM8 1SL",
-    "addressCountry": "GB"
-  },
-  "menu": "https://order.toasttab.com/online/psk-online-ordering",
-  "acceptsReservations": "False",
-  "openingHoursSpecification": [
-    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "18:00", "closes": "23:00"},
-    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "13:00", "closes": "23:00"},
-    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "14:00", "closes": "23:45"},
-    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "13:00", "closes": "23:45"},
-    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "13:00", "closes": "23:00"}
-  ],
-  "sameAs": ["https://x.com/PSK_UKI", "https://www.instagram.com/peruvianstreetkitchen/"]
+  "@graph": [
+    {
+      "@type": "Restaurant",
+      "@id": "https://peruvianstreetkitchen.com/#restaurant",
+      "name": "Peruvian Street Kitchen",
+      "alternateName": "PSK",
+      "description": "Peruvian Street Kitchen is a 100% halal Peruvian rice box takeaway in Dagenham, East London, serving flame-grilled chicken thigh over cilantro-lime rice with three homemade sauces: aji verde, aji blanco and aji rojo.",
+      "url": "https://peruvianstreetkitchen.com/",
+      "image": "https://peruvianstreetkitchen.com/assets/img/og.jpg",
+      "servesCuisine": ["Peruvian", "Halal", "Chicken", "Rice boxes"],
+      "priceRange": "££",
+      "telephone": "+447438543703",
+      "email": "hello@peruvianstreetkitchen.com",
+      "currenciesAccepted": "GBP",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Unit G12, Kemp Road",
+        "addressLocality": "Dagenham",
+        "addressRegion": "London",
+        "postalCode": "RM8 1SL",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.563981,
+        "longitude": 0.133543
+      },
+      "areaServed": [
+        {"@type": "Place", "name": "Dagenham"},
+        {"@type": "Place", "name": "Chadwell Heath"},
+        {"@type": "Place", "name": "Romford"},
+        {"@type": "Place", "name": "Barking"},
+        {"@type": "Place", "name": "East London"}
+      ],
+      "hasMenu": "https://order.toasttab.com/online/psk-online-ordering",
+      "acceptsReservations": "False",
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "18:00", "closes": "23:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "13:00", "closes": "23:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "14:00", "closes": "23:45"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "13:00", "closes": "23:45"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "13:00", "closes": "23:00"}
+      ],
+      "potentialAction": [
+        {
+          "@type": "OrderAction",
+          "name": "Click and collect",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://order.toasttab.com/online/psk-online-ordering",
+            "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+          },
+          "deliveryMethod": "http://purl.org/goodrelations/v1#PickUp"
+        },
+        {
+          "@type": "OrderAction",
+          "name": "Delivery",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.ubereats.com/gb/store/peruvian-street-kitchen-g12-chadwell-heath-industrial-park-kemp-road/pXbf_ZSdWNG_N_mCPJYeJg",
+            "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+          },
+          "deliveryMethod": "http://purl.org/goodrelations/v1#DeliveryModeOwnFleet"
+        }
+      ],
+      "sameAs": [
+        "https://x.com/PSK_UKI",
+        "https://www.instagram.com/peruvianstreetkitchen/",
+        "https://www.ubereats.com/gb/store/peruvian-street-kitchen-g12-chadwell-heath-industrial-park-kemp-road/pXbf_ZSdWNG_N_mCPJYeJg",
+        "https://deliveroo.co.uk/menu/london/chadwell-heath/peruvian-street-kitchen-chadwell-heath"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://peruvianstreetkitchen.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Peruvian Street Kitchen halal?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Peruvian Street Kitchen is 100% halal. Every dish on the menu is halal, always."}
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Peruvian Street Kitchen?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Unit G12, Kemp Road, Dagenham RM8 1SL, on the Chadwell Heath side just off the High Road. A second branch in Walthamstow is coming soon."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is aji verde?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Aji verde is the famous Peruvian green sauce: coriander and green chilli blended fresh every morning. It is poured over every box. Two more sauces sit beside it, aji blanco, a creamy white sauce with New York halal-cart roots, and aji rojo, a red sauce built on fresh Carolina peppers."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does Peruvian Street Kitchen deliver?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can order delivery through Uber Eats or Deliveroo. Ordering direct for click and collect is cheaper, with 20% off using the code COLLECT20."}
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get 20% off at Peruvian Street Kitchen?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Use the code COLLECT20 on any click and collect order placed direct. It takes 20% off every order."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does Peruvian Street Kitchen do catering?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes, for office lunches, birthdays and private events, from 20 boxes upwards. Collect from the Dagenham kitchen or have it delivered across inner London. Build an order at peruvianstreetkitchen.com/catering."}
+        },
+        {
+          "@type": "Question",
+          "name": "What are Peruvian Street Kitchen's opening hours?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Monday 6pm to 11pm. Tuesday to Thursday 1pm to 11pm. Friday 2pm to 11:45pm. Saturday 1pm to 11:45pm. Sunday 1pm to 11pm."}
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>
@@ -104,9 +192,9 @@
   <!-- ============ HERO ============ -->
   <section class="hero" aria-labelledby="hero-title">
     <picture class="hero-bg">
-      <source media="(max-width: 700px)" srcset="assets/img/hero-mobile.webp?v=10">
-      <source media="(max-width: 1300px)" srcset="assets/img/hero-wide-sm.webp?v=10">
-      <img src="assets/img/hero-wide.webp?v=10" alt="Peruvian Street Kitchen spread: a rice box and loaded Cajun fries drenched in green aji verde sauce, with sauce pots, chillies and lime on dark slate" width="2560" height="1429" fetchpriority="high">
+      <source media="(max-width: 700px)" srcset="assets/img/hero-mobile.webp?v=21">
+      <source media="(max-width: 1300px)" srcset="assets/img/hero-wide-sm.webp?v=21">
+      <img src="assets/img/hero-wide.webp?v=21" alt="Peruvian Street Kitchen spread: a rice box and loaded Cajun fries drenched in green aji verde sauce, with sauce pots, chillies and lime on dark slate" width="2560" height="1429" fetchpriority="high">
     </picture>
     <div class="hero-smoke" aria-hidden="true"></div>
     <div class="hero-scrim" aria-hidden="true"></div>
@@ -182,8 +270,8 @@
         <h2 id="sauce-title" class="playbill-quote reveal">&ldquo;That <em>absolutely banging</em> green&nbsp;sauce.&rdquo;</h2>
         <p class="playbill-cite reveal">Sami, five stars, no notes</p>
         <div class="sauce-body reveal">
-          <p>Aji verde. Coriander, green chilli, and a few things we take to the grave. Blended fresh every morning and poured heavy over every box. It is the sauce that inspired the whole menu.</p>
-          <p>Two more live beside it. <strong>Aji blanco</strong>, our creamy cart sauce with NYC halal-cart roots. <strong>Aji rojo</strong>, red heat built on fresh Carolina peppers. All three homemade. All three available to take home by the pot.</p>
+          <p>Aji verde. Coriander, green chilli, and a few things we take to the grave. Blended fresh every morning, poured heavy over every box.</p>
+          <p>Two more live beside it. <strong>Aji blanco</strong>, creamy, with NYC halal-cart roots. <strong>Aji rojo</strong>, red heat off fresh Carolina peppers. All homemade, all available by the pot.</p>
         </div>
         <figure class="sauce-trio reveal">
           <img src="assets/img/sauce-trio.webp" alt="Three sauce pots: green aji verde, creamy white aji blanco, red aji rojo" width="1200" height="670" loading="lazy">
@@ -258,9 +346,13 @@
       </div>
 
       <!-- Full menu board -->
-      <div class="menu-board reveal" aria-labelledby="board-title">
+      <details class="menu-board reveal">
+        <summary class="board-summary">
+          <span class="board-summary-text">See the full board</span>
+          <span class="board-summary-note">Every box, bun, wing and dessert</span>
+        </summary>
         <svg class="torn torn-top" viewBox="0 0 1440 32" preserveAspectRatio="none" aria-hidden="true"><path d="M0 32V14l36 8 42-12 51 9 47-13 58 12 49-7 55 11 62-15 48 10 57-6 51 12 59-14 46 9 54-11 58 13 50-8 56 10 61-14 47 12 53-9 58 11 49-13 55 9 60-11 46 13 52-8 57 10 43-12V32Z"/></svg>
-        <h3 id="board-title" class="board-title">The full board</h3>
+        <h3 class="board-title">The full board</h3>
         <div class="board-cols">
           <div class="board-group">
             <h4>Street Boxes</h4>
@@ -304,7 +396,7 @@
         </div>
         <p class="board-foot">Everything made in-house from scratch. Recipes you will not find anywhere else.</p>
         <svg class="torn torn-bottom" viewBox="0 0 1440 32" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0v18l36-8 42 12 51-9 47 13 58-12 49 7 55-11 62 15 48-10 57 6 51-12 59 14 46-9 54 11 58-13 50 8 56-10 61 14 47-12 53 9 58-11 49 13 55-9 60 11 46-13 52 8 57-10 43 12V0Z"/></svg>
-      </div>
+      </details>
     </div>
   </section>
 
@@ -346,12 +438,10 @@
 
       <div class="story-body">
         <p class="story-drop reveal">Two brothers who couldn&rsquo;t leave a sauce alone.</p>
-        <p class="reveal">I worked in an office in central London, and downstairs there was a Peruvian chicken spot I got a bit obsessed with. Grilled thigh, that green sauce, the lot. The catch was I could only ever get it there. Leave the office and it was gone. Nothing near home came close.</p>
-        <p class="reveal">Around the same time my brother got back from New York still going on about the white sauce off the halal carts. He&rsquo;d brought the recipe home with him.</p>
-        <p class="reveal">So we started messing about in the kitchen. Me chasing the green sauce I missed from work, him building on the cart white sauce from New York. Cooking, tasting, arguing, cooking again.</p>
+        <p class="reveal">I worked in an office in central London, and downstairs was a Peruvian chicken spot I got obsessed with. The catch was I could only get it there. Leave the office and it was gone.</p>
+        <p class="reveal">Around the same time my brother came back from New York still going on about the white sauce off the halal carts, recipe in hand. So we started messing about in the kitchen. Me chasing the green sauce I missed from work, him building on the cart sauce from New York. Cooking, tasting, arguing, cooking again.</p>
         <p class="story-pull reveal">We&rsquo;re not chefs. We just couldn&rsquo;t stop until the box tasted like the one worth queuing for.</p>
-        <p class="reveal">The early versions were nowhere near it. But we already knew the recipe is only a fraction of the work. The rest is making it again, and again, until it&rsquo;s right every single time.</p>
-        <p class="reveal">Then the Peruvian Thigh sold out in three hours on a Monday. That&rsquo;s when we knew we had something.</p>
+        <p class="reveal">Then the Peruvian Thigh sold out in three hours on a Monday. That&rsquo;s when we knew.</p>
         <p class="hand story-sign reveal">&mdash; Sakib &amp; Sifat, PSK</p>
       </div>
 
@@ -386,11 +476,6 @@
           <cite>Kaish</cite>
         </blockquote>
         <hr class="pb-rule">
-        <blockquote class="pb-quote pb-forest">
-          <p>&ldquo;Wife said it&rsquo;s better than Assenheims&rdquo;</p>
-          <cite>Habibur</cite>
-        </blockquote>
-        <hr class="pb-rule">
         <blockquote class="pb-quote pb-ink">
           <p>&ldquo;Best rice box I&rsquo;ve had. My <span class="pb-big">in-laws</span> loved it too&rdquo;</p>
           <cite>Family order</cite>
@@ -399,16 +484,6 @@
         <blockquote class="pb-quote pb-crimson">
           <p>&ldquo;By far some of the <span class="pb-big">best food</span> you can get in London&rdquo;</p>
           <cite>Melusi</cite>
-        </blockquote>
-        <hr class="pb-rule">
-        <blockquote class="pb-quote pb-ink">
-          <p>&ldquo;9.5/10 if I&rsquo;m being really picky. Flavour and quality wise, easy 10/10&rdquo;</p>
-          <cite>The PSK family group chat</cite>
-        </blockquote>
-        <hr class="pb-rule">
-        <blockquote class="pb-quote pb-forest">
-          <p>&ldquo;This is banging, Allahumma barik&rdquo;</p>
-          <cite>Ishak</cite>
         </blockquote>
         <hr class="pb-rule">
         <blockquote class="pb-quote pb-final pb-crimson">
@@ -491,6 +566,35 @@
     </div>
   </section>
 
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="section-inner">
+      <h2 id="faq-title" class="display-xl reveal">Quick <span class="mark">answers</span></h2>
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>Is it halal?</summary>
+          <p>Yes. Peruvian Street Kitchen is 100% halal, everything on the menu, always.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Where are you?</summary>
+          <p>Unit G12, Kemp Road, Dagenham RM8 1SL, Chadwell Heath side, just off the High Road. Walthamstow is next.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>What is aji verde?</summary>
+          <p>The famous green sauce. Coriander and green chilli, blended fresh every morning and poured over every box. Aji blanco (creamy, New York halal-cart roots) and aji rojo (red heat, Carolina peppers) sit beside it.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Do you deliver?</summary>
+          <p>Yes, through <a href="https://www.ubereats.com/gb/store/peruvian-street-kitchen-g12-chadwell-heath-industrial-park-kemp-road/pXbf_ZSdWNG_N_mCPJYeJg" target="_blank" rel="noopener">Uber Eats</a> and <a href="https://deliveroo.co.uk/menu/london/chadwell-heath/peruvian-street-kitchen-chadwell-heath" target="_blank" rel="noopener">Deliveroo</a>. Ordering direct for collection is cheaper: 20% off with <strong>COLLECT20</strong>.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Do you cater?</summary>
+          <p>Yes, from 20 boxes up. Office lunches, birthdays, private events. <a href="/catering/">Build an order</a> and we will come back with a quote.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ FINAL CTA ============ -->
   <section class="closer" aria-labelledby="closer-title">
     <img class="closer-bg" src="assets/img/overhead-band.webp" alt="" aria-hidden="true" width="1800" height="1005" loading="lazy">
@@ -549,6 +653,6 @@
   <a class="btn btn-ghost" href="https://www.ubereats.com/gb/store/peruvian-street-kitchen-g12-chadwell-heath-industrial-park-kemp-road/pXbf_ZSdWNG_N_mCPJYeJg" target="_blank" rel="noopener">Uber Eats</a>
 </div>
 
-<script src="assets/js/main.js?v=10" defer></script>
+<script src="assets/js/main.js?v=21" defer></script>
 </body>
 </html>
