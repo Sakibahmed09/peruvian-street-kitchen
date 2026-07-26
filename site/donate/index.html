@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate a Rice Box | Winter Warmth Campaign | Peruvian Street Kitchen</title>
+<meta name="description" content="Donate a hot halal rice box to delivery riders and homeless people across London. Every meal you give, we match. Winter Warmth Campaign by Peruvian Street Kitchen.">
+<link rel="canonical" href="https://peruvianstreetkitchen.com/donate/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Donate a Rice Box | Winter Warmth Campaign">
+<meta property="og:description" content="Every meal you give, we match. Hot halal food for delivery riders and homeless people across London.">
+<meta property="og:image" content="https://peruvianstreetkitchen.com/assets/img/og.jpg">
+<meta property="og:url" content="https://peruvianstreetkitchen.com/donate/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#131312">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chango&family=Caveat+Brush&family=Big+Shoulders+Display:wght@600;700;800;900&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css?v=8">
+</head>
+<body>
+<a class="skip-link" href="#give">Skip to the donation</a>
+
+<div class="topbar">
+<div class="offer-bar offer-bar-leaf" role="note">
+  <p><span class="offer-big">Every meal you give, we match</span> &middot; Winter Warmth Campaign</p>
+</div>
+
+<header class="site-header">
+  <a class="brand" href="/" aria-label="Peruvian Street Kitchen home">
+    <img src="/assets/img/logo-mark-sm.png" alt="PSK" width="145" height="96">
+  </a>
+  <nav class="main-nav" aria-label="Main">
+    <a href="/#sauce">The Sauce</a>
+    <a href="/#menu">Menu</a>
+    <a href="/#story">Our Story</a>
+    <a href="/catering/">Catering</a>
+    <a href="/donate/" aria-current="page">Donate</a>
+  </nav>
+  <div class="header-actions">
+    <a class="btn btn-flame btn-sm" href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Order Now</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+</div>
+
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <nav aria-label="Mobile">
+    <a href="/#sauce">The Sauce</a>
+    <a href="/#menu">Menu</a>
+    <a href="/#story">Our Story</a>
+    <a href="/catering/">Catering</a>
+    <a href="/donate/">Donate</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+  <div class="mobile-menu-cta">
+    <a class="btn btn-flame" href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Click &amp; Collect, 20% off</a>
+    <a class="btn btn-ghost" href="tel:+447438543703">Call us</a>
+  </div>
+  <p class="mobile-menu-foot">Unit G12, Kemp Rd, Dagenham RM8 1SL &middot; <a href="tel:+447438543703">07438 543703</a></p>
+</div>
+
+<main>
+
+  <section class="page-hero page-hero-donate">
+    <div class="section-inner">
+      <p class="hand">Winter Warmth Campaign</p>
+      <h1 class="display-xl">Feed a rider,<br>feed a <span class="mark mark-leaf">neighbour</span></h1>
+      <p class="page-hero-sub">In this cold, delivery riders work long hours and skip meals to cover their fees. They go restaurant to restaurant, watching other people eat. Your donation puts a hot halal rice box in their hands, and in the hands of homeless people across London.</p>
+      <p class="donate-match">Every single meal you give, <strong>we match</strong>.</p>
+    </div>
+  </section>
+
+  <section class="donate-wrap section-inner" id="give">
+    <div class="donate-grid">
+
+      <!-- ---------- calculator ---------- -->
+      <div class="step donate-calc">
+        <h2 class="step-title">Choose your donation</h2>
+        <p class="step-hint">One rice box feeds one person. Pick how many you would like to give.</p>
+
+        <div class="meal-picker">
+          <button type="button" class="step-btn step-btn-lg" id="meals-down" aria-label="One fewer meal">&minus;</button>
+          <div class="meal-count">
+            <output id="meals-out">5</output>
+            <span class="meal-label">meals</span>
+          </div>
+          <button type="button" class="step-btn step-btn-lg" id="meals-up" aria-label="One more meal">+</button>
+        </div>
+
+        <div class="meal-presets" role="group" aria-label="Quick amounts">
+          <button type="button" class="preset" data-meals="1">1</button>
+          <button type="button" class="preset" data-meals="5">5</button>
+          <button type="button" class="preset" data-meals="10">10</button>
+          <button type="button" class="preset" data-meals="25">25</button>
+          <button type="button" class="preset" data-meals="50">50</button>
+        </div>
+
+        <div class="match-board" aria-live="polite">
+          <div class="match-cell">
+            <span class="match-label">You donate</span>
+            <strong class="match-value" id="you-give">5</strong>
+          </div>
+          <div class="match-plus" aria-hidden="true">+</div>
+          <div class="match-cell">
+            <span class="match-label">We match</span>
+            <strong class="match-value" id="we-match">5</strong>
+          </div>
+          <div class="match-equals" aria-hidden="true">=</div>
+          <div class="match-cell match-cell-total">
+            <span class="match-label">Total meals</span>
+            <strong class="match-value" id="total-meals">10</strong>
+          </div>
+        </div>
+        <p class="match-caption" id="match-caption">10 warm meals for riders and homeless people</p>
+
+        <p class="donate-total">Your total: <strong id="donate-total">&pound;50</strong> <span class="donate-per">&pound;10 feeds one person</span></p>
+      </div>
+
+      <!-- ---------- transfer details ---------- -->
+      <div class="step donate-pay">
+        <h2 class="step-title">Send it over</h2>
+        <p class="step-hint">Bank transfer, straight to the campaign. Use the reference so we can track your meals.</p>
+
+        <dl class="bank">
+          <div class="bank-row">
+            <dt>Account name</dt>
+            <dd>Sifat Ahmed</dd>
+          </div>
+          <div class="bank-row">
+            <dt>Account number</dt>
+            <dd class="mono">31975353</dd>
+          </div>
+          <div class="bank-row">
+            <dt>Sort code</dt>
+            <dd class="mono">60-83-71</dd>
+          </div>
+          <div class="bank-row">
+            <dt>Reference</dt>
+            <dd class="mono">donation</dd>
+          </div>
+        </dl>
+
+        <button type="button" class="btn btn-flame btn-lg btn-block" id="copy-bank">Copy bank details</button>
+        <p class="copy-status" id="copy-status" role="status"></p>
+
+        <p class="donate-after">Once it lands, message us the amount and we will confirm your meals and match them.</p>
+        <div class="send-cta">
+          <a class="btn btn-ghost" id="tell-us" href="https://wa.me/447438543703" target="_blank" rel="noopener">Tell us on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="donate-why">
+      <h2 class="step-title">Why this matters</h2>
+      <p>Riders keep this city fed. They are outside in the cold on the worst nights of the year, on bikes, waiting outside restaurants for other people's dinners. A hot box costs us very little and means a great deal at 11pm in February.</p>
+      <p>We cook it, we hand it over, and we match what you give so your donation goes twice as far. No middlemen, no admin fee, just food.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/img/logo-full-md.png" alt="PSK, Peruvian Street Kitchen" width="420" height="320" loading="lazy">
+      <p class="footer-line">Peru not Peri. Enough said.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/#sauce">The Sauce</a>
+      <a href="/#menu">Menu</a>
+      <a href="/#story">Our Story</a>
+      <a href="/catering/">Catering</a>
+      <a href="/contact/">Contact</a>
+      <a href="/donate/">Donate</a>
+      <a href="https://order.toasttab.com/online/psk-online-ordering" target="_blank" rel="noopener">Order</a>
+    </nav>
+    <div class="footer-info">
+      <p>Unit G12, Kemp Road<br>Dagenham RM8 1SL</p>
+      <p><a href="tel:+447438543703">07438 543703</a></p>
+      <p><a href="mailto:hello@peruvianstreetkitchen.com">hello@peruvianstreetkitchen.com</a></p>
+      <p class="footer-social">
+        <a href="https://www.instagram.com/peruvianstreetkitchen/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/PSK_UKI" target="_blank" rel="noopener">X</a>
+      </p>
+    </div>
+  </div>
+  <div class="footer-legal">
+    <p>&copy; 2026 Peruvian Street Kitchen. 100% halal.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js?v=8" defer></script>
+<script src="/assets/js/donate.js?v=8" defer></script>
+</body>
+</html>
