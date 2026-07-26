@@ -2622,7 +2622,7 @@ details.menu-board .board-title { display: none; }
 }
 
 /* A marked word must never be wider than its line box */
-.mark { max-width: 100%; overflow-wrap: break-word; }
+.mark { max-width: 100%; }
 .dish-info h3, .way-name, .branch-name, .step-title { overflow-wrap: break-word; }
 
 /* Phone/email links in address blocks are primary actions on mobile */
@@ -2636,3 +2636,10 @@ address a {
 
 /* The whole choice card is the tap target; the radio is just its marker */
 .choice-card { min-height: 56px; }
+
+/* Headline type is sized so the longest single word ("everything",
+   "NEIGHBOUR") fits the content box at every phone width, so nothing has
+   to break mid-word. */
+@media (max-width: 700px) {
+  .display-xl { font-size: clamp(1.75rem, 9.4vw, 2.6rem); }
+}
