@@ -1633,15 +1633,17 @@ section { scroll-margin-top: calc(var(--header-h) + 56px); }
     padding-block: 0 clamp(1.5rem, 4vh, 2.5rem);
   }
   .hero-bg img { object-position: 50% 22%; }
+  /* Headline occupies 27-56% of the hero, so the scrim has to be dark by 28%
+     or bright food shows through the type. Measured, not guessed. */
   .hero-scrim {
     background:
       linear-gradient(to bottom,
-        rgba(19, 19, 18, 0.35) 0%,
-        rgba(19, 19, 18, 0.05) 12%,
-        rgba(19, 19, 18, 0) 30%,
-        rgba(19, 19, 18, 0.45) 45%,
-        rgba(19, 19, 18, 0.88) 56%,
-        var(--ink) 66%,
+        rgba(19, 19, 18, 0.40) 0%,
+        rgba(19, 19, 18, 0.08) 11%,
+        rgba(19, 19, 18, 0.24) 20%,
+        rgba(19, 19, 18, 0.68) 30%,
+        rgba(19, 19, 18, 0.90) 42%,
+        var(--ink) 57%,
         var(--ink) 100%);
   }
   .hero-scroll { display: none; }
