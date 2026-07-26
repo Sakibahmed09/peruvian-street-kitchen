@@ -2655,3 +2655,7 @@ address a {
   font-size: clamp(1.2rem, 1.45vw, 1.5rem);
   line-height: 1.05;
 }
+
+/* Hero: the product carries the colour — leaf green for the sauce line */
+.hero-title .line-leaf { color: var(--leaf-bright); }
+.hero-title .full-stop-leaf { color: var(--stone); }
