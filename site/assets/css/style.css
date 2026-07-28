@@ -1640,11 +1640,12 @@ section { scroll-margin-top: calc(var(--header-h) + 56px); }
       linear-gradient(to bottom,
         rgba(19, 19, 18, 0.40) 0%,
         rgba(19, 19, 18, 0.08) 11%,
-        rgba(19, 19, 18, 0.24) 20%,
-        rgba(19, 19, 18, 0.68) 30%,
-        rgba(19, 19, 18, 0.90) 42%,
-        var(--ink) 57%,
-        var(--ink) 100%);
+        rgba(19, 19, 18, 0.20) 22%,
+        rgba(19, 19, 18, 0.70) 31%,
+        rgba(19, 19, 18, 0.90) 38%,
+        rgba(19, 19, 18, 0.92) 60%,
+        rgba(19, 19, 18, 0.86) 74%,
+        rgba(19, 19, 18, 0.86) 100%);
   }
   .hero-scroll { display: none; }
 
@@ -1654,15 +1655,23 @@ section { scroll-margin-top: calc(var(--header-h) + 56px); }
   .hero-title { order: 2; }
   .hero-sub { order: 3; max-width: 34ch; }
   .hero-open-note { order: 4; margin-top: var(--space-sm); font-size: 0.84rem; }
-  .hero-cta { order: 5; margin-top: var(--space-md); gap: 0.6rem; }
+  .hero-cta {
+    order: 5;
+    margin-top: var(--space-md);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 0.55rem;
+  }
+  .hero-cta .btn-flame { grid-column: 1 / -1; }
   .hero-sub { font-size: 0.95rem; line-height: 1.5; margin-top: var(--space-sm); }
   .sub-tail { display: none; }
-  .hero-cta .btn-lg { font-size: 1.02rem; padding: 0.7rem 1.2rem; }
+  .hero-cta .btn-lg { font-size: 1.02rem; padding: 0.68rem 1.1rem; }
+  .hero-cta .btn-ghost { font-size: 0.92rem; padding: 0.6rem 0.5rem; }
   .hero-title { font-size: clamp(2.5rem, 12.4vw, 3.6rem); }
+  .hero-title .line { text-shadow: 0 1px 14px rgba(19, 19, 18, 0.6); }
   .stamp { font-size: 0.72rem; padding: 0.4em 0.85em; }
   .hero-loc { font-size: 0.8rem; }
 
-  .hero-cta .btn { flex: 1 1 100%; }
   .catering-cta .btn { flex: 1 1 100%; }
   .catering-types li { rotate: none; }
 
@@ -1692,11 +1701,10 @@ section { scroll-margin-top: calc(var(--header-h) + 56px); }
 @media (max-width: 520px) {
   .menu-quad { grid-template-columns: minmax(0, 1fr); }
   .dish figure { aspect-ratio: 5 / 4; }
-  .hero-cta .btn { width: 100%; }
   .closer-cta { flex-direction: column; align-items: stretch; }
   .find-actions .btn { width: 100%; }
   .sticker { width: 106px; height: 106px; font-size: 0.88rem; bottom: -18px; left: -14px; }
-  .offer-bar { font-size: 0.76rem; }
+  .offer-bar { font-size: 0.76rem; padding-block: 0.34rem; }
 }
 
 /* ============================================================
