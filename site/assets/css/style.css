@@ -522,7 +522,8 @@ section { scroll-margin-top: calc(var(--header-h) + 56px); }
   text-shadow: 0 4px 40px rgba(0, 0, 0, 0.55);
 }
 .hero-title .line { display: block; }
-.hero-title .line-2 { color: var(--flame); }
+.hero-title .w { display: block; }
+.hero-title .w-flame { color: var(--flame); }
 .hero-title .full-stop { color: var(--flame); }
 
 .hero-sub {
@@ -611,8 +612,7 @@ section { scroll-margin-top: calc(var(--header-h) + 56px); }
   }
   .hero-stamp-row { animation-delay: 0.05s; }
   .hero-title .line-1 { animation-delay: 0.12s; }
-  .hero-title .line-2 { animation-delay: 0.22s; }
-  .hero-title .line-3 { animation-delay: 0.32s; }
+  .hero-title .line-2 { animation-delay: 0.26s; }
   .hero-sub { animation-delay: 0.45s; }
   .hero-cta { animation-delay: 0.55s; }
   .hero-open-note { animation-delay: 0.65s; }
@@ -1667,7 +1667,8 @@ section { scroll-margin-top: calc(var(--header-h) + 56px); }
   .sub-tail { display: none; }
   .hero-cta .btn-lg { font-size: 1.02rem; padding: 0.68rem 1.1rem; }
   .hero-cta .btn-ghost { font-size: 0.92rem; padding: 0.6rem 0.5rem; }
-  .hero-title { font-size: clamp(2.5rem, 12.4vw, 3.6rem); }
+  .hero-title { font-size: clamp(1.55rem, 7.9vw, 2.4rem); line-height: 0.95; }
+  .hero-title .w { display: inline; }
   .hero-title .line { text-shadow: 0 1px 14px rgba(19, 19, 18, 0.6); }
   .stamp { font-size: 0.72rem; padding: 0.4em 0.85em; }
   .hero-loc { font-size: 0.8rem; }
@@ -2620,7 +2621,7 @@ details.menu-board .board-title { display: none; }
   .dish-info h3 { font-size: 1.15rem; }
   .menu-quad .dish figure { flex-basis: 36%; }
   .playbill-quote { font-size: clamp(1.6rem, 9vw, 2.1rem); }
-  .hero-title { font-size: clamp(2.2rem, 11.2vw, 2.8rem); }
+  .hero-title { font-size: clamp(1.4rem, 7.7vw, 1.9rem); }
   .pb-quote p { font-size: clamp(1.35rem, 7.5vw, 1.7rem); }
   .pb-huge { font-size: clamp(2.4rem, 13vw, 3.2rem); }
   .board-summary-text { font-size: 1.2rem; }
@@ -2667,5 +2668,5 @@ address a {
 }
 
 /* Hero: the product carries the colour — leaf green for the sauce line */
-.hero-title .line-leaf { color: var(--leaf-bright); }
+.hero-title .w-leaf { color: var(--leaf-bright); }
 .hero-title .full-stop-leaf { color: var(--leaf-bright); }
