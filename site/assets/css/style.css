@@ -1251,11 +1251,10 @@ section { scroll-margin-top: calc(var(--header-h) + 56px); }
 .branch-name {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(2rem, 3.6vw, 2.9rem);
+  font-size: clamp(1.5rem, 2.45vw, 2rem);
   line-height: 0.95;
   text-transform: uppercase;
   color: var(--stone);
-  overflow-wrap: break-word;
 }
 
 .branch-addr {
@@ -1633,19 +1632,23 @@ section { scroll-margin-top: calc(var(--header-h) + 56px); }
     padding-block: 0 clamp(1.5rem, 4vh, 2.5rem);
   }
   .hero-bg img { object-position: 50% 22%; }
-  /* Headline occupies 27-56% of the hero, so the scrim has to be dark by 28%
-     or bright food shows through the type. Measured, not guessed. */
+  /* Re-fitted for the two-line headline. Measured bands (320-430px): title
+     46.5-63%, sub 58-72%, CTAs 70-95%. So the food stays clean to ~32%, the
+     ramp lands just before the type, and the tail lifts again because the
+     photo is dark slate down there and does not need the help. */
   .hero-scrim {
     background:
       linear-gradient(to bottom,
-        rgba(19, 19, 18, 0.40) 0%,
-        rgba(19, 19, 18, 0.08) 11%,
-        rgba(19, 19, 18, 0.20) 22%,
-        rgba(19, 19, 18, 0.70) 31%,
-        rgba(19, 19, 18, 0.90) 38%,
-        rgba(19, 19, 18, 0.92) 60%,
-        rgba(19, 19, 18, 0.86) 74%,
-        rgba(19, 19, 18, 0.86) 100%);
+        rgba(19, 19, 18, 0.28) 0%,
+        rgba(19, 19, 18, 0.03) 12%,
+        rgba(19, 19, 18, 0.05) 32%,
+        rgba(19, 19, 18, 0.20) 40%,
+        rgba(19, 19, 18, 0.52) 46%,
+        rgba(19, 19, 18, 0.78) 52%,
+        rgba(19, 19, 18, 0.82) 60%,
+        rgba(19, 19, 18, 0.72) 72%,
+        rgba(19, 19, 18, 0.54) 86%,
+        rgba(19, 19, 18, 0.46) 100%);
   }
   .hero-scroll { display: none; }
 
@@ -2627,14 +2630,14 @@ details.menu-board .board-title { display: none; }
   .board-summary-text { font-size: 1.2rem; }
   .step-title { font-size: clamp(1.45rem, 8vw, 1.7rem); }
   .way-name { font-size: 1.35rem; }
-  .branch-name { font-size: clamp(1.7rem, 9vw, 2rem); }
+  .branch-name { font-size: clamp(1.05rem, 5.9vw, 1.85rem); }
   .sticker { width: 92px; height: 92px; font-size: 0.76rem; left: -6px; bottom: -14px; }
   .section-inner { padding-inline: 1rem; }
 }
 
 /* A marked word must never be wider than its line box */
 .mark { max-width: 100%; }
-.dish-info h3, .way-name, .branch-name, .step-title { overflow-wrap: break-word; }
+.dish-info h3, .way-name, .branch-name, .step-title { overflow-wrap: normal; hyphens: none; }
 
 /* Phone/email links in address blocks are primary actions on mobile */
 .branch-addr a,
